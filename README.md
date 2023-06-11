@@ -13,4 +13,16 @@ npx create-react-app ecommerce-app
 
 5. Create `firebase.config.js` including the configuration of firebase
 
-6. Create .env variables
+7. `npm install -g firebase-tools`
+
+8. Create .env variables
+
+9. Initialize products (hosting, firestore, functions, storage, auth)
+
+9. First deployment:
+`firebase login`
+`firebase init`
+`firebase deploy` (hosting, firestore, functions, storage, auth)
+
+9. Configure firestore
+
