@@ -63,3 +63,11 @@ Starting the login page
 4. Create `form.css`.
 
 5. Style the form
+
+## Video 4
+
+Start the authenticator process - Preparing the context
+
+1. Create a context in `contexts/auth`
+
+2. Create the authContext.jsx, authReducer.js and types.js
