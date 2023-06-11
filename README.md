@@ -49,3 +49,17 @@ Configure navigation.
 8. App loads the login screen, change `app.js to app.jsx`
 
 9. Remove the unnecesary things in the index.html
+
+## Video 3
+
+Starting the login page
+
+1. Create `styles` folder.
+
+2. Create `screen.css`.
+
+3. Create component for login form in `components/loginform`
+
+4. Create `form.css`.
+
+5. Style the form

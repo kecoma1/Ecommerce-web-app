@@ -1,0 +1,66 @@
+.login-form {
+    box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.4);
+    padding: 15px;
+    border-radius: 7px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-form > input[type=submit] {
+    margin-top: 20px;
+    background-color: green;
+    color: white;
+    min-width: 320px;
+    height: 40px;
+    padding: 5px;
+    border-radius: 7px;
+    border: 1px solid green;
+    width: 100%;
+    transition: 0.2s;
+}
+
+.login-form > input[type=submit]:active {
+    scale: 0.97;
+}
+
+.input-container {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+
+.input-container > input {
+    outline: none;
+    min-width: 320px;
+    height: 30px;
+    border-radius: 7px;
+    border: 0px solid;
+    transition: 0.4s;
+    background-color: rgba(180, 180, 180, 0.2);
+    border: 1px solid rgba(180, 180, 180, 0.2);
+    padding: 5px;
+}
+
+.input-container > input:hover {
+    border: 1px solid green;
+}
+
+.input-container > input:focus {
+    border: 1px solid green;
+    background-color: white;
+}
+
+
+.input-container > input:active {
+    border: 1px solid green;
+    background-color: white;
+}
+
+
