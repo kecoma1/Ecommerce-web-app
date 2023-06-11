@@ -4,9 +4,10 @@ export const AuthContext = createContext();
 
 export const init = () => {
     return {
-        logger: false,
+        logged: false,
         id: '',
         name: '',
         email: '',
+        token: ''
     }
 }

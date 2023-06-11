@@ -63,4 +63,8 @@
     background-color: white;
 }
 
-
+.form-error {
+    color: red;
+    max-width: 320px;
+    text-align: center;
+}
