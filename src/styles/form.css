@@ -19,6 +19,7 @@
     border: 1px solid green;
     width: 100%;
     transition: 0.2s;
+    cursor: pointer;
 }
 
 .login-form > input[type=submit]:active {

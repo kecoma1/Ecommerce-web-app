@@ -5,7 +5,7 @@ import { AuthContext } from '../contexts/auth/authContext';
 
 export const LoginForm = () => {
 
-    const {login} = useContext(AuthContext)
+    const { login, loading } = useContext(AuthContext)
 
     const [{ email, password }, handleInputChange] = useForm({ email: '', password: '' });
     const [error, setError] = useState('')
@@ -14,7 +14,7 @@ export const LoginForm = () => {
         e.preventDefault()
 
         try {
-            console.log(await login(email, password))
+            await login(email, password)
         } catch (error) {
             setError('Error al iniciar sesión. Comprueba que tus datos son correctos.')
             setTimeout(() => { setError('') }, 4000)
@@ -51,7 +51,7 @@ export const LoginForm = () => {
 
             <span className='form-error'>{error}</span>
 
-            <input type="submit" value='Iniciar sesión' />
+            <input type="submit" value={loading ? 'Cargando...' : 'Iniciar sesión'} />
         </form>
     )
 }

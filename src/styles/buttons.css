@@ -1,0 +1,37 @@
+.button {
+    margin-top: 20px;
+    background-color: green;
+    color: white;
+    min-width: 320px;
+    height: 40px;
+    padding: 5px;
+    border-radius: 7px;
+    border: 1px solid green;
+    max-width: 350px;
+    width: 100%;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.button:active {
+    scale: 0.97;
+}
+
+.button-outline {
+    margin-top: 20px;
+    background-color: white;
+    color: white;
+    min-width: 320px;
+    height: 40px;
+    padding: 5px;
+    border-radius: 7px;
+    border: 1px solid green;
+    max-width: 350px;
+    width: 100%;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.button-outline:active {
+    scale: 0.97;
+}
