@@ -1,4 +1,4 @@
-import { signInWithEmailAndPassword, onAuthStateChanged } from "firebase/auth";
+import { signInWithEmailAndPassword, onAuthStateChanged, createUserWithEmailAndPassword } from "firebase/auth";
 import React, { useEffect, useReducer, useState } from 'react'
 import { AuthContext, init } from './authContext';
 import { authReducer } from './authReducer';
@@ -17,7 +17,25 @@ export const AuthProvider = ({ children }) => {
         setLoading(true)
         try {
             await signInWithEmailAndPassword(auth, email, password)
-        } catch { }
+            navigator('/')
+            return {}
+        } catch (error) {
+            return { error }
+        }
+        finally {
+            setLoading(false)
+        }
+    }
+
+    const register = async (email, password) => {
+        setLoading(true)
+        try {
+            await createUserWithEmailAndPassword(auth, email, password);
+            navigator('/')
+            return {}
+        } catch (error) {
+            return { error }
+        }
         finally {
             setLoading(false)
         }
@@ -56,6 +74,7 @@ export const AuthProvider = ({ children }) => {
             loading,
             dispatch,
             login,
+            register,
             logout,
             authListener
         }}>
